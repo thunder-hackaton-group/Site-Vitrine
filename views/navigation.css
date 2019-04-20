@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.exeption{
+    margin-top: 85px;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    height: 70px;
+    position: fixed;
+    top:0;
+    left:0;
+    background: linear-gradient(to right,orange, red, purple);
+    z-index: 1000;
+}
+
+nav div .menu-button{
+    visibility: hidden;
+    float: right;
+    margin : 15px 5% 0 0;
+    position: relative;
+    display: inline-block;
+    width: 0%;
+}
+
+nav div .menu-button .img-menu{
+    width: 100%;
+}
+
+nav div .menu{
+    float: right;
+    width: 10%;
+    position: relative;
+    display: inline-block;
+}
+
+nav div .app-name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 45px;
+    margin: 0.5% 0 0 5%;
+    font-variant: small-caps;
+    cursor: default; 
+}
+
+a,nav div .links{
+    position: relative;
+    color: white;
+    font-family: 'Trebuchet MS','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links{
+    float: right;
+    margin: 0 4% 0 0;
+}
+
+a{
+    display: inline-block;
+    padding: 20px 10px 0 10px;
+    height: 47px;
+    transition: background-color ease 1s;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.img-gal{
+    float: left;
+    width: 28%;
+    height: 200px;
+    box-shadow: 2px 2px 5px grey;
+    position: relative;
+    display: inline-block;
+    font-family: 'Trebuchet MS';
+    margin: 75px 25px 0 25px;
+    cursor: pointer;
+    color: rgb(100, 100, 100);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3),white);
+    transition: filter 1s;
+}
+
+.img-gal:hover{
+    filter: brightness(75%);
+}

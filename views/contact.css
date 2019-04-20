@@ -1,0 +1,272 @@
+/*
+ * Gallery style👑, 
+ * CSS Code😁,
+ * Thanks for checking😎👍
+ */
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    height: 70px;
+    position: fixed;
+    top:0;
+    left:0;
+    background: linear-gradient(to right,orange, red, purple);
+    z-index: 1000;
+}
+
+.contenu{
+    margin: 90px 0 0 0;
+}
+.mail-link{
+    color: blue;
+    text-align: left;
+    display: inline;
+}
+.description{
+    text-align: left;
+    display: inline;
+    margin: 2.5%;
+    margin-left: 5%;
+}
+.personne{
+    color: black;
+}
+div ul{
+    text-align: left;
+    list-style-type: none;
+    display: block;
+}
+.place{
+    display: flex;
+    float: left;
+    text-align: center;
+    border : 0.25em ridge #ff751a;
+    margin: 2%;
+    padding-right : 1.34%;
+    padding-left: -0.5%;
+}
+
+
+nav div .menu-button{
+    visibility: hidden;
+    float: right;
+    margin : 15px 5% 0 0;
+    position: relative;
+    display: inline-block;
+    width: 0%;
+}
+
+nav div .menu-button .img-menu{
+    width: 100%;
+}
+
+nav div .menu{
+    float: right;
+    width: 10%;
+    position: relative;
+    display: inline-block;
+}
+
+nav div .app-name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 45px;
+    margin: 0.5% 0 0 5%;
+    font-variant: small-caps;
+    cursor: default; 
+}
+
+a,nav div .links{
+    position: relative;
+    color: white;
+    font-family: 'Trebuchet MS','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links{
+    float: right;
+    margin: 0 4% 0 0;
+}
+
+a{
+    display: inline-block;
+    padding: 20px 10px 0 10px;
+    height: 47px;
+    transition: background-color ease 1s;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+a:nth-child(5){
+    border-bottom: 3px solid white;
+}
+
+.img-gal{
+    float: left;
+    width: 28%;
+    height: 200px;
+    box-shadow: 2px 2px 5px grey;
+    position: relative;
+    display: inline-block;
+    font-family: 'Trebuchet MS';
+    margin: 75px 25px 0 25px;
+    cursor: pointer;
+    color: rgb(100, 100, 100);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3),white);
+    transition: filter 1s;
+}
+
+.img-gal:hover{
+    filter: brightness(75%);
+}
+
+
+/*
+ * Responsive CSS code
+*/
+
+@media screen and (max-width: 720px) {
+  body{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    nav{
+        width: inherit;
+        height: 70px;
+        position: fixed;
+        top:0;
+        left:0;
+        background: linear-gradient(to right,orange, red, purple);
+        z-index: 1000;
+    }
+
+    nav div .menu{
+        float: right;
+        width: 10%;
+        position: relative;
+        display: inline-block;
+    }
+
+    nav div .menu-button .img-menu{
+        width: 100%;
+    }
+
+    nav div .menu-button{
+        visibility: visible;
+        width: 10%;
+        float: right;
+        position: relative;
+        display: inline-block;
+        transform-origin: center;
+        transition: transform 1s;
+    }
+
+    nav div .menu-button:hover{
+        transform: rotate(90deg);
+    }
+
+    nav div .menu-button:hover ~ .links{
+        display: inline-block;
+    }
+
+    nav div .app-name{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position: relative;
+        display: inline-block;
+        float: left;
+        color: white;
+        font-size: 45px;
+        margin: 1% 0 0 5%;
+        font-variant: small-caps;
+        cursor: default; 
+    }
+
+    a,nav div .links{
+        position: relative;
+        color: white;
+        font-family: 'Trebuchet MS','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .links{
+        display : none;
+        float: right;
+        margin: 10px -1% 0 0;
+    }
+
+    .menu-links:hover .links{
+        display: inline-block;
+    }
+
+    .menu-links:hover .menu-button{
+        transform: rotate(90deg);
+    }
+
+    a{
+        display: block;
+        padding: 10px;
+        height: 47px;
+        font-size: 12px;
+        background-color: rgba(0,0,0,0.7);
+        transition: background-color ease 1s;
+    }
+
+    a:hover{
+        background-color: rgba(255, 255, 255, 0.6);
+        color: rgb(100,50, 0);
+    }
+
+    a:nth-child(5){
+        background-color: rgba(200, 100, 0, 0.8);
+        border-bottom : none;
+    }
+
+    a:nth-child(5):hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: rgb(100, 50, 0);
+        border-bottom : none;
+    }
+
+    .img-gal{
+        float: left;
+        width: 80%;
+        height: 200px;
+        box-shadow: 2px 2px 5px grey;
+        position: relative;
+        display: inline-block;
+        font-family: 'Trebuchet MS';
+        margin: 75px 25px 0 25px;
+        cursor: pointer;
+        color: rgb(100, 100, 100);
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3),white);
+        transition: filter 1s;
+    }
+
+    .img-gal:nth-child(1){
+        margin: 120px 25px 0 25px;
+    }
+}
+

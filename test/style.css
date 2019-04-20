@@ -1,0 +1,43 @@
+.blur div h2 {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur div:hover h2 {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
+
+.colonne {
+	margin: 15px 25px 0 25px;
+	padding: 0;
+}
+.colonne:last-child {
+	padding-bottom: 60px;
+}
+.colonne::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.colonne div {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 150px;
+	margin: 0 0 0 35px;
+	padding: 0;
+}
+.colonne div:first-child {
+	margin-left: 0;
+}
+div {
+	width: 200px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	background: #F4F4F4;
+	overflow: hidden;}

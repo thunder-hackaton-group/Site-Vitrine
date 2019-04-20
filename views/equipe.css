@@ -1,0 +1,49 @@
+a:nth-child(4){
+    border-bottom: 3px solid white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float:left;
+	padding-left:100px;
+}
+
+.ensemble{
+	max-width:100%;
+	position:center;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content: center;
+	text-align:center;
+	padding-top:50px;
+}
+
+.image{
+	border-radius:50%;
+	width:200px;
+	height:200px;
+}
+
+.Desc{
+	padding:12px;
+}
+
+@media screen and (max-width: 720px) {
+    a:nth-child(4){
+        background-color: rgba(200, 100, 0, 0.8);
+        border-bottom : none;
+    }
+    
+    a:nth-child(4):hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: rgb(100, 50, 0);
+        border-bottom : none;
+    }
+}
